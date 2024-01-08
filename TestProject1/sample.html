@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form with Mandatory Checkbox</title>
+    <style>
+        form {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        label {
+            display: flex; /* or use display: inline-block; */
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label input {
+            margin-right: 5px; /* Adjust the spacing between the checkbox and text */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{3,}" title="Please enter a valid name with at least 3 characters">
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+
+        <label>
+            <input type="checkbox" id="agreeCheckbox" required>
+            I agree to the terms and conditions
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

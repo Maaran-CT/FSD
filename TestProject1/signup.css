@@ -1,0 +1,105 @@
+.header{
+    font-size: 30px;
+    text-align: center;
+    padding:10px;
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+header{grid-area:i1;
+    background-color: white;
+    border:2px ;
+    height:80px;
+    width:100%;
+    border-radius: 0px 5px 5px 0px;
+    overflow:hidden;
+    box-shadow: 5px 2px 3px;
+   
+}
+header h2{
+    font-family: cursive;
+    float: left;
+}
+#quote{
+    font-size: 20px;
+}
+header img{
+    height: 100px;
+    width: 100px;
+    float:left;
+}
+
+
+.c2{
+    margin-top: 100px;
+    width:500px;
+    height:600px;
+    position: relative;
+}
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(to bottom,rgb(2, 226, 251),rgb(75, 157, 250)) ;
+        
+}
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(215, 241, 250, 0.5); /* Adjust the alpha (fourth value) for the darkness of the overlay */
+        backdrop-filter: blur(2px); /* Adjust the blur value as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        text-align: center;
+        border-radius: 3% 3% 3% 3%;
+}
+
+.text {
+    z-index: 1; /* Ensure the text is above the overlay */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    font-size: large;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#error {
+    color: red;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
